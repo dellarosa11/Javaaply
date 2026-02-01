@@ -1,5 +1,4 @@
 package fundamentojava;
-
 import java.util.Date;
 
 public class Import {
@@ -11,7 +10,6 @@ public class Import {
 		
 		Date d = new Date();
 		System.out.println(s + d);
-		System.out.println(s.charAt(2));
 	
 	}
 	
