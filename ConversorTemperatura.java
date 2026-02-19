@@ -17,6 +17,11 @@ public class ConversorTemperatura {
 		System.out.println("Conversor Temperatura");
 		System.out.printf("O resultado da conversão eh: %.2fºC",resultado);
 		
+		
+		
+		
+		System.out.println("a soma dos numeros eh : ");
+		
 	}
 
 }
