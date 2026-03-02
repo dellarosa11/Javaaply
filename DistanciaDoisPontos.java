@@ -1,27 +1,31 @@
 package fundamentojava;
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Scanner;
+import java.util.Locale;
+
 
 public class DistanciaDoisPontos {
     public static void main(String[] args) throws IOException {
+
         Scanner n = new Scanner(System.in);
+        n.useLocale(Locale.US);
 
-        double p[] = new double[2];
-
-        for (int i = 0; i < 2; i++) {
-            double A = n.nextDouble();
-            double B = n.nextDouble();
-
-            p[i] = Math.pow(A - B, 2);
-        }
+        double x1 = n.nextDouble();
+        double y1 = n.nextDouble();
+        double x2 = n.nextDouble();
+        double y2 = n.nextDouble();
 
         n.close();
 
-        double soma = Arrays.stream(p).sum();
-        double raiz = Math.sqrt(soma);
+        double parte1 = Math.pow(x2 - x1, 2);
+        double parte2 = Math.pow(y2 - y1, 2);
 
-        System.out.println(raiz);
+        double distancia = Math.sqrt(parte1 + parte2);
+
+        System.out.printf("%.4f",distancia);
+        System.out.println("");
+
+
     }
 }
